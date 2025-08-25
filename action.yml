@@ -1,0 +1,11 @@
+name: "Update README from uv.lock"
+description: "Parses uv.lock and updates README with dependencies"
+author: "Mariyam CHEICK ISMAIL"
+inputs:
+  readme-file:
+    description: "Path to README file"
+    required: false
+    default: "README.md"
+runs:
+  using: "docker"
+  image: "Dockerfile"
